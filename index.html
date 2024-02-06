@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.css">
+    <link href="https://css.gg/css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Skyweb</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <menu>
-                <img src="./svgs/Full-logo.svg" alt="Logo">
+                <li><img src="./svgs/Full-logo.svg" alt="Logo"></li>
             </menu>
-            <menu>
+            <menu class="nav__links">
                 <li>Proč my</li>
                 <li>Proces spolupráce</li>
                 <li>Předešlé projekty</li>
+                <li><a class="button" href="#">Chci web</a></li>
+            </menu>
+            <menu class="nav__hamburger-block">
+                <li>
+                    <div class="hamburger">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </div>
+                </li>
             </menu>
         </nav>
         <div>
@@ -73,5 +90,55 @@
         <div><img src="./imgs/sladký-sen.png" alt="Ukázka předešlého projektu pro cukráštví Sladký sen"></div>
         <div><img src="./imgs/barbershop.png" alt="Ukázka předešlého projektu pro barbershop GoldenFade"></div>
     </section>
+    <section>
+        <h2>Co o nás říkají</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div>„Profesionální přístup a špičkový design! Skyweb opravdu nezklamal. Komunikace byla skvělá, vyslechli si každý detail mého požadavku a představili mi nádherný grafický koncept. Oceňuji jejich trpělivost a ochotu přizpůsobit se všem mým potřebám a že jich občas bylo hodně. Výsledný web přesně odpovídá mému vysněnému vizuálu! Doporučuji těm, kteří hledají profesionální přístup a kvalitní výsledek. 👏💻”</div></div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section>
+        <form>
+            <div>
+                <h2>Chcete kvalitní a levný web?</h2>
+                <p>od 2 500 Kč</p>
+                <p>Napište nám</p>
+                <label for="name">Jméno/Název firmy</label>
+                <input type="text" name="name" id="name">
+                <label for="phone">Telefon</label>
+                <input type="tel" name="phone" id="phone">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail">
+                <label for="info">Popis firmy</label>
+                <input type="text" name="info" id="info">
+            </div>
+            <div>
+                
+            </div>
+        </form>
+    </section>
+    <footer>
+        <ul>
+            <li><i class="gg-smartphone"></i>720 855 422</li>
+            <li><i class="gg-mail"></i>kontakt@skyweb.cz</li>
+        </ul>
+    </footer>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      
+        const swiper = new Swiper(".swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+      </script>
+      <script src="hamburger.js"></script>
 </body>
 </html>
