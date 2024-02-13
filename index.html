@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.css">
     <link href="https://css.gg/css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +17,12 @@
     <header>
         <nav class="nav">
             <menu>
-                <li><img src="./svgs/Full-logo.svg" alt="Logo"></li>
+                <li class="nav__logo"><img src="./svgs/Full-logo.svg" alt="Logo"></li>
             </menu>
             <menu class="nav__links">
-                <li>Proč my</li>
-                <li>Proces spolupráce</li>
-                <li>Předešlé projekty</li>
+                <li class="u-bold-text"><a href="#">Proč my</a></li>
+                <li class="u-bold-text"><a href="#">Proces spolupráce</a></li>
+                <li class="u-bold-text"><a href="#">Předešlé projekty</a></li>
                 <li><a class="button" href="#">Chci web</a></li>
             </menu>
             <menu class="nav__hamburger-block">
@@ -35,10 +36,17 @@
             </menu>
         </nav>
         <div>
-            <h1>Webové stránky podle vaší představy</h1>
-            <p>Tvoříme webové stránky, které mají za úkol nadchnout a hlavně zviditelnit. V našem týmu klademe důraz na pozitivní vztah s našimi zákazníky a dostupnou cenu i pro ty nejmenší projekty.</p>
-            <a href="#">Chci webové stránky</a>
-            <a href="#">Reference</a>
+            <h1 class="u-center">Webové stránky <span class="u-blue-text">podle vaší představy</span></h1>
+            <p class="u-center">Tvoříme webové stránky, které mají za úkol nadchnout a hlavně zviditelnit. V našem týmu klademe důraz na pozitivní vztah s našimi zákazníky a dostupnou cenu i pro ty nejmenší projekty.</p>
+            <div class="hero__buttons">
+                <a class="button u-center-div" href="#">Chci webové stránky</a>
+                <a class="button button--secondary u-center-div" href="#">Reference</a>
+            </div>
+            <div class="mockup-container">
+                <img class="mockup-img mockup-img01" src="./imgs/Bracket.png" alt="">
+                <img class="mockup-img mockup-img02" src="./imgs/OceanRecords.png" alt="">
+                <img class="mockup-img mockup-img03" src="./imgs/Bracket-galerie.png" alt="">
+            </div>
         </div>
     </header>
     <section>
@@ -87,8 +95,8 @@
     </section>
     <section>
         <h2>Předešlé projekty</h2>
-        <div><img src="./imgs/sladký-sen.png" alt="Ukázka předešlého projektu pro cukráštví Sladký sen"></div>
-        <div><img src="./imgs/barbershop.png" alt="Ukázka předešlého projektu pro barbershop GoldenFade"></div>
+        <!-- <div><img src="./imgs/sladký-sen.png" alt="Ukázka předešlého projektu pro cukráštví Sladký sen"></div>
+        <div><img src="./imgs/barbershop.png" alt="Ukázka předešlého projektu pro barbershop GoldenFade"></div> -->
     </section>
     <section>
         <h2>Co o nás říkají</h2>
