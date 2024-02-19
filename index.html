@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Skyweb</title>
 </head>
 <body>
@@ -75,19 +76,19 @@
             <div>
                 <img class="u-responsive-img" src="./imgs/diskuze.jpg" alt="Záběr na dvě osoby vedoucí diskuzi.">
                 <div>
-                    <div class="step">
+                    <div class="window window--step">
                         <h3>Diskuze</h3>
                         <p>Prvně s vámi probereme detaily vašeho projektu, které zahrnují charakter projektu, cílovou skupinu, rozsah a další, abysme byli schopni vymyslet řešení webových stránek. Veškerá komunikace  probíhá přes telefon, email nebo v některých případech i osobně.</p>
                     </div>
-                    <div>
+                    <div class="window window--step">
                         <h3>Wireframe</h3>
                         <p>Poté, co už máme představu o vašem projektu, vytváříme wireframe, který vám přiblíží podobu připravovaného webu. Za pomoci wireframu je možné dělat úpravy dle vaší zpětné vazby bez ztrácení času na složité úpravě celého komplexního návrhu.</p>
                     </div>
-                    <div>
+                    <div class="window window--step">
                         <h3>Grafická návrh</h3>
                         <p>Vytváříme kompletní verzi grafického návrhu, který má za úkol na první pohled zaujmout své návštěvníky. Detaily a drobné nedostatky v grafickém návrhu je stále možné upravovat dle vaší zpětné vazby k zhotovení vaši vysněné stránky.</p>
                     </div>
-                    <div>
+                    <div class="window window--step">
                         <h3>Kódování</h3>
                         <p>Finální podobu grafického návrhu implementujeme pomocí HTML, CSS a JavaScriptu. Při kódování našich projektů používáme nejlepší techniky pro zajištění dobrého SEO, které pošle návštěvnost vašich stránek do nebeských výšek. </p>
                     </div>
@@ -103,38 +104,56 @@
             <h2>Co o nás říkají</h2>
             <div class="swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><div class="review">„Výjimečná práce na tvorbě webových stránek! Sledují aktuální trendy, jsou inovativní a flexibilní v přístupu k zákazníkovi. Výsledný web přesně splnil naše očekávání. Velmi nás potěšila také jejich ochota přinášet k projektu nové nápady a přizpůsobit se měnícím se požadavkům. 👍💻”</div></div>
-                  <div class="swiper-slide"><div class="review">"Skvělá práce! Rychlá reakce na požadavky, perfektní grafický design a jedinečný web. Děkujeme za úžasnou spolupráci! Tým je nejen odborný, ale také velmi přátelský. S jejich pomocí jsme získali moderní a efektivní webovou stránku. 💻🚀 #WebDesignMistra #DokonaléWebovéStránky"</div></div>
-                  <div class="swiper-slide"><div class="review">"Tato firma se opravdu stará o klienty. Od prvního setkání až po dokončení projektu, bylo vše bezproblémové. Profesionální, kreativní a vstřícní! Doporučuji. Jsme vděční za ochotu a výbornou spolupráci, která nám přinesla výsledek přesně podle našich představ. 🌐🔧 #SkvěláSpolupráce"</div></div>
+                  <div class="swiper-slide"><div class="window">„Výjimečná práce na tvorbě webových stránek! Sledují aktuální trendy, jsou inovativní a flexibilní v přístupu k zákazníkovi. Výsledný web přesně splnil naše očekávání. Velmi nás potěšila také jejich ochota přinášet k projektu nové nápady a přizpůsobit se měnícím se požadavkům. 👍💻”</div></div>
+                  <div class="swiper-slide"><div class="window">"Skvělá práce! Rychlá reakce na požadavky, perfektní grafický design a jedinečný web. Děkujeme za úžasnou spolupráci! Tým je nejen odborný, ale také velmi přátelský. S jejich pomocí jsme získali moderní a efektivní webovou stránku. 💻🚀 #WebDesignMistra #DokonaléWebovéStránky"</div></div>
+                  <div class="swiper-slide"><div class="window">"Tato firma se opravdu stará o klienty. Od prvního setkání až po dokončení projektu, bylo vše bezproblémové. Profesionální, kreativní a vstřícní! Doporučuji. Jsme vděční za ochotu a výbornou spolupráci, která nám přinesla výsledek přesně podle našich představ. 🌐🔧 #SkvěláSpolupráce"</div></div>
                 </div>
                 <div class="swiper-pagination"></div>   
             </div>
         </section>
         <section>
-            <form>
-                <div>
-                    <h2>Chcete kvalitní a levný web?</h2>
-                    <p>od 2 500 Kč</p>
-                    <p>Napište nám</p>
-                    <label for="name">Jméno/Název firmy</label>
-                    <input type="text" name="name" id="name">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" name="phone" id="phone">
-                    <label for="mail">Email</label>
-                    <input type="email" name="mail" id="mail">
-                    <label for="info">Popis firmy</label>
-                    <input type="text" name="info" id="info">
+            <form class="form">
+                <div class="form__img">
+                    <img class="u-responsive-img" src="./imgs/mockup.png" alt="Ukázka předešlých zpracovaných webů.">
                 </div>
-                <div>
-        
+                <div class="form__body">
+                    <div class="form__header">
+                        <p class="form__heading">Chcete kvalitní a levný web?</p>
+                        <p class="form__price">od 2 500 Kč</p>
+                        <p class="form__heading">Napište nám</p>
+                    </div>
+                    <div class="form__section">
+                        <label class="form__label" for="name">Jméno/Název firmy</label>
+                        <input class="form__input" type="text" name="name" id="name" placeholder="Damien Tíšil">
+                    </div>
+                    <div class="form__section">
+                        <label class="form__label" for="phone">Telefon</label>
+                        <input class="form__input" type="tel" name="phone" id="phone" placeholder="707 405 212">
+                    </div>
+                    <div class="form__section">
+                        <label class="form__label" for="mail">Email</label>
+                        <input class="form__input" type="email" name="mail" id="mail" placeholder="damien.tisil@gmail.com">
+                    </div>
+                    <div class="form__section">
+                        <label class="form__label" for="info">Popis firmy</label>
+                        <textarea class="form__input" name="info" id="info" rows="6" placeholder="Dobová restaurace ve městě Brno servírující především česká ale třeba i německá jídla." style="resize: none;"></textarea>
+                    </div>
                 </div>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <ul>
-            <li><i class="gg-smartphone"></i>720 855 422</li>
-            <li><i class="gg-mail"></i>kontakt@skyweb.cz</li>
+            <li><i class="icon icon--contact fa-solid fa-mobile-screen"></i>720 855 422</li>
+            <li><i class="icon icon--contact fa-regular fa-envelope"></i>kontakt@skyweb.cz</li>
+        </ul>
+        <ul class="footer__socials">
+            <li><i class="icon fa-brands fa-instagram"></i></li>
+            <li><i class="icon fa-brands fa-facebook-f"></i></li>
+            <li><i class="icon fa-brands fa-linkedin-in"></i></li>
+        </ul>
+        <ul class="footer__copyright">
+            <li>© 2023 SkyWeb s.r.o.</li>
         </ul>
     </footer>
     <script type="module">
@@ -151,5 +170,6 @@
         });
       </script>
       <script src="hamburger.js"></script>
+      <script src="https://kit.fontawesome.com/e911d031db.js" crossorigin="anonymous"></script>
 </body>
 </html>

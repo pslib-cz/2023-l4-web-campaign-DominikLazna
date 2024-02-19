@@ -21,6 +21,11 @@ main {
     padding-right: 1rem;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 li {
     list-style: none;
 }
@@ -36,18 +41,32 @@ a {
 }
 
 header {
+    text-align: center;
     padding: 1rem;
     height: 100vh;
 }
 
+section {
+    padding: 2rem 0;
+}
+
 h1 {
     font-size: 1.75rem;
-    text-align: center;
 }
 
 h2 {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
     color: var(--dark-blue-color);
+}
+
+h3 {
+    margin: 1rem 0;
+}
+
+p {
+    margin: 0;
 }
 
 .nav {
@@ -84,7 +103,7 @@ h2 {
 .card {
     text-align: center;
     padding: 1rem 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     background: linear-gradient(to right bottom, transparent 90%, rgba(101, 153, 255, 0.1));
     border-radius: 16px;
     box-shadow: 0 16px 48px 0px rgba(101, 153, 255, 0.25);
@@ -115,19 +134,92 @@ h2 {
     left: 50%;
     translate: -50%;
     bottom: 1rem;
+    z-index: 0;
 }
 
 .swiper-slide {
     align-items: stretch;
 }
 
-.review {
-    display: block;
+.window {
+    text-align: center;
     height: 100%;
     padding: 1rem;
     color: var(--white-color);
     background-color: var(--dark-blue-color);
     border-radius: 16px;
+}
+
+.window--step {
+    margin-top: 2rem;
+}
+
+.form__img {
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    height: 160px;
+}
+
+.form__body {
+    padding: 1rem;
+    color: var(--white-color);
+    background: linear-gradient(to right bottom ,var(--light-blue-color), var(--dark-blue-color));
+    border-radius: 0 0 24px 24px;
+}
+
+.form__header {
+    text-align: center;
+}
+
+.form__heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+.form__input {
+    display: block;
+    width: calc(100% - 3rem);
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 16px;
+}
+
+.form__label {
+    display: block;
+    margin-left: 1.5rem;
+    margin-bottom: .25rem;
+    color: var(--light-gray-color);
+}
+
+.form__section {
+    margin-top: 1rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--white-color);
+    background: linear-gradient(to bottom, var(--light-blue-color), var(--dark-blue-color));
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer li {
+    margin-top: 1rem;
+}
+
+.icon {
+    font-size: 1.25rem;
+}
+
+.icon--contact {
+    margin-right: 1rem;
 }
 
 .mockup-container {
@@ -168,12 +260,14 @@ h2 {
     margin-bottom: 1rem;
     color: var(--white-color);
     background-color: var(--dark-blue-color);
+    box-shadow: 0 16px 48px 0 rgba(102, 78, 255, .5);
     border-radius: 100px;
 }
 
 .button--secondary {
     font-weight: 400;
     color: var(--dark-blue-color);
-    background-color: var(--white-color);
+    background-color: transparent;
     border: 1px solid var(--dark-blue-color);
+    box-shadow: none;
 }
