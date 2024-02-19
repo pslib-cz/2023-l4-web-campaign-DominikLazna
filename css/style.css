@@ -51,6 +51,7 @@ section {
 }
 
 h1 {
+    margin: 2rem 0;
     font-size: 1.75rem;
 }
 
@@ -109,6 +110,14 @@ p {
     box-shadow: 0 16px 48px 0px rgba(101, 153, 255, 0.25);
 }
 
+.card__heading {
+    margin: 1rem 0;
+}
+
+.project-img {
+    margin-top: 2rem;
+}
+
 .nav__hamburger-block {
     z-index: 2;
 }
@@ -135,10 +144,6 @@ p {
     translate: -50%;
     bottom: 1rem;
     z-index: 0;
-}
-
-.swiper-slide {
-    align-items: stretch;
 }
 
 .window {
@@ -207,7 +212,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .footer li {
@@ -219,7 +224,7 @@ p {
 }
 
 .icon--contact {
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 
 .mockup-container {
@@ -231,7 +236,7 @@ p {
     left: 50%;
     translate: -40%;
     rotate: -25deg;
-    bottom: 9rem;
+    bottom: 8rem;
     z-index: -1;
 }
 
