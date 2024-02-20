@@ -44,6 +44,7 @@ header {
     text-align: center;
     padding: 1rem;
     height: 100vh;
+    position: relative;
     overflow: hidden;
 }
 
@@ -75,6 +76,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav__logo {
@@ -82,12 +84,7 @@ p {
 }
 
 .nav__links {
-    display: none;
-    position: absolute;
-    padding: 0;
-}
-
-.nav__links.active {
+    text-align: center;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -95,11 +92,16 @@ p {
     align-items: center;
     gap: 1rem;
     padding-top: 84px;
-    left: 0;
+    position: absolute;
     top: 0;
-    text-align: center;
+    left: 10000px;
     background-color: var(--white-color);
     z-index: 1;
+}
+
+.nav__links.active {
+    left: 0;
+    transition: .25s;
 }
 
 .card {
@@ -115,35 +117,11 @@ p {
     margin: 1rem 0;
 }
 
-.project-img {
-    margin-top: 2rem;
-}
-
-.nav__hamburger-block {
-    z-index: 2;
-}
-
-.hamburger {
-    width: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.hamburger__line {
-    width: 40px;
-    height: 4px;
-    background-color: var(--dark-blue-color);
-    border-radius: 100px;
-}
-
 .hero__buttons {
     position: absolute;
-    z-index: 2;
     left: 50%;
     translate: -50%;
-    bottom: 1rem;
+    bottom: 2rem;
     z-index: 0;
 }
 
@@ -157,6 +135,10 @@ p {
 }
 
 .window--step {
+    margin-top: 2rem;
+}
+
+.project-img {
     margin-top: 2rem;
 }
 
@@ -229,28 +211,26 @@ p {
 }
 
 .mockup-container {
+    width: 75%;
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 1rem;
-    left: 50%;
-    translate: -40%;
-    rotate: -25deg;
-    bottom: 8rem;
+    left: 15%;
+    rotate: -45deg;
+    margin-top: 2rem;
     z-index: -1;
-}
-
-.mockup-img {
-    width: 80px;
 }
 
 .mockup-img01 {
     grid-row: 1 / span 2;
+    grid-column: 2;
 }
 
 .mockup-img02 {
     grid-row: 3 / span 2;
+    grid-column: 2;
 }
 
 .mockup-img03 {
@@ -273,7 +253,7 @@ p {
 .button--secondary {
     font-weight: 400;
     color: var(--dark-blue-color);
-    background-color: transparent;
+    background-color: var(--white-color);
     border: 1px solid var(--dark-blue-color);
     box-shadow: none;
 }
