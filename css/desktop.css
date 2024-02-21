@@ -1,0 +1,40 @@
+@media only screen and (min-width: 1200px) {
+    header {
+        padding: 1rem 9rem;
+    }
+    
+    section {
+        padding: 2rem 9rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        text-align: left;
+        width: 60%;
+        padding-top: 8rem;
+    }
+
+    .hero__buttons {
+        position: static;
+        display: flex;
+        gap: 2rem;
+        translate: none;
+        margin-top: 1rem;
+    }
+
+    .hero__buttons .u-center {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mockup-container {
+        width: 30%;
+        left: auto;
+        right: 5rem;
+        top: 10%;
+        rotate: -30deg;
+    }
+}
