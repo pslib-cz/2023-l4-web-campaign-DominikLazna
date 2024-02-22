@@ -134,6 +134,11 @@ p {
     margin-top: 2rem;
 }
 
+.process__img {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
 .project-img {
     max-width: 456px;
     margin-top: 2rem;
@@ -159,6 +164,7 @@ p {
 .form__heading {
     font-size: 1.5rem;
     font-weight: 700;
+    color: var(--white-color);
     margin: .5rem 0;
 }
 
@@ -183,7 +189,7 @@ p {
 
 .footer {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     color: var(--white-color);
     background: linear-gradient(to bottom, var(--light-blue-color), var(--dark-blue-color));
 }
@@ -196,6 +202,10 @@ p {
 }
 
 .footer li {
+    margin-top: 1rem;
+}
+
+.footer__copyright {
     margin-top: 1rem;
 }
 
@@ -253,4 +263,14 @@ p {
     background-color: var(--white-color);
     border: 1px solid var(--dark-blue-color);
     box-shadow: none;
+}
+
+.button--form {
+    font-weight: 700;
+    color: var(--dark-blue-color);
+    background-color: var(--white-color);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }

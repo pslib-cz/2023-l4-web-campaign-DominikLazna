@@ -22,10 +22,10 @@
                 <li class="nav__logo"><img src="./svgs/Full-logo.svg" alt="Logo"></li>
             </menu>
             <menu class="nav__links">
-                <li class="u-bold-text"><a href="#">Proč my</a></li>
-                <li class="u-bold-text"><a href="#">Proces spolupráce</a></li>
-                <li class="u-bold-text"><a href="#">Předešlé projekty</a></li>
-                <li><a class="button" href="#">Chci web</a></li>
+                <li class="u-bold-text"><a class="nav__item" href="#proc-my">Proč my</a></li>
+                <li class="u-bold-text"><a class="nav__item" href="#proces">Proces spolupráce</a></li>
+                <li class="u-bold-text"><a class="nav__item" href="#reference">Předešlé projekty</a></li>
+                <li><a class="button" href="#formular">Chci web</a></li>
             </menu>
             <menu class="nav__hamburger-block">
                 <li>
@@ -41,8 +41,8 @@
                 <h1>Webové stránky <span class="u-blue-text">podle vaší představy</span></h1>
                 <p>Tvoříme webové stránky, které mají za úkol nadchnout a hlavně zviditelnit. V našem týmu klademe důraz na pozitivní vztah s našimi zákazníky a dostupnou cenu i pro ty nejmenší projekty.</p>
                 <div class="hero__buttons">
-                    <a class="button u-center" href="#">Chci webové stránky</a>
-                    <a class="button button--secondary u-center" href="#">Reference</a>
+                    <a class="button u-center" href="#formular">Chci webové stránky</a>
+                    <a class="button button--secondary u-center" href="#reference">Reference</a>
                 </div>
             </div>
             <div class="mockup-container">
@@ -52,9 +52,9 @@
             </div>
     </header>
     <main>
-        <section>
+        <section id="proc-my">
             <h2>Proč my</h2>
-            <div>
+            <div class="u-flex-gap-medium">
                 <div class=card>
                     <img src="./svgs/mobil-svg.svg" alt="Mobil">
                     <p class="u-blue-text card__heading">Vytvoříme vám web, který bude zcela responzivní</p>
@@ -72,11 +72,11 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="proces">
             <h2>Jaký je proces naší spolupráce?</h2>
-            <div>
-                <img class="u-responsive-img" src="./imgs/diskuze.jpg" alt="Záběr na dvě osoby vedoucí diskuzi.">
-                <div>
+            <div class="process">
+                <div class="process__img"><img class="u-responsive-img" src="./imgs/diskuze.png" alt="Záběr na dvě osoby vedoucí diskuzi."></div>
+                <div class="process__steps">
                     <div class="window window--step">
                         <h3>Diskuze</h3>
                         <p>Prvně s vámi probereme detaily vašeho projektu, které zahrnují charakter projektu, cílovou skupinu, rozsah a další, abysme byli schopni vymyslet řešení webových stránek. Veškerá komunikace  probíhá přes telefon, email nebo v některých případech i osobně.</p>
@@ -96,14 +96,14 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="reference">
             <h2>Předešlé projekty</h2>
             <div class="projects-container">
                 <div class="project-img"><a href="#"><img class="u-responsive-img" src="./imgs/sladky-sen.png" alt="Ukázka předešlého projektu pro cukráštví Sladký sen"></a></div>
                 <div class="project-img"><a href="#"><img class="u-responsive-img" src="./imgs/barbershop.png" alt="Ukázka předešlého projektu pro barbershop GoldenFade"></a></div>
             </div>
         </section>
-        <section class="reviews">
+        <section id="recenze" class="reviews">
             <h2>Co o nás říkají</h2>
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -114,14 +114,14 @@
                 <div class="swiper-pagination"></div>   
             </div>
         </section>
-        <section>
+        <section id="formular">
             <form class="form">
                 <div class="form__img">
                     <img class="u-responsive-img" src="./imgs/mockup.png" alt="Ukázka předešlých zpracovaných webů.">
                 </div>
                 <div class="form__body">
                     <div class="form__header">
-                        <p class="form__heading">Chcete kvalitní a levný web?</p>
+                        <h2 class="form__heading">Chcete kvalitní a levný web?</h2>
                         <p class="form__price">od 2 500 Kč</p>
                         <p class="form__heading">Napište nám</p>
                     </div>
@@ -141,23 +141,24 @@
                         <label class="form__label" for="info">Popis firmy</label>
                         <textarea class="form__input" name="info" id="info" rows="6" placeholder="Dobová restaurace ve městě Brno servírující především česká ale třeba i německá jídla." style="resize: none;"></textarea>
                     </div>
+                    <input class="button button--form" type="submit">
                 </div>
             </form>
         </section>
     </main>
     <footer class="footer">
-        <ul>
-            <li><i class="icon icon--contact fa-solid fa-mobile-screen"></i>720 855 422</li>
-            <li><i class="icon icon--contact fa-regular fa-envelope"></i>kontakt@skyweb.cz</li>
-        </ul>
-        <ul class="footer__socials">
-            <li><i class="icon fa-brands fa-instagram"></i></li>
-            <li><i class="icon fa-brands fa-facebook-f"></i></li>
-            <li><i class="icon fa-brands fa-linkedin-in"></i></li>
-        </ul>
-        <ul class="footer__copyright">
-            <li>© 2023 SkyWeb s.r.o.</li>
-        </ul>
+        <div class="footer__links">
+            <ul class="footer__contacts">
+                <li><i class="icon icon--contact fa-solid fa-mobile-screen"></i>720 855 422</li>
+                <li><i class="icon icon--contact fa-regular fa-envelope"></i>kontakt@skyweb.cz</li>
+            </ul>
+            <ul class="footer__socials">
+                <li><i class="icon fa-brands fa-instagram"></i></li>
+                <li><i class="icon fa-brands fa-facebook-f"></i></li>
+                <li><i class="icon fa-brands fa-linkedin-in"></i></li>
+            </ul>
+        </div>
+        <p class="footer__copyright">© 2023 SkyWeb s.r.o.</p>
     </footer>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
