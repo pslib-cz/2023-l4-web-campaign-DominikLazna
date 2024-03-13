@@ -4,5 +4,6 @@
 }
 
 .swiper {
-    overflow: visible;
+    overflow:clip;
+    overflow-clip-margin: 32px;
 }

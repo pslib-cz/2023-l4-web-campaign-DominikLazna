@@ -33,7 +33,7 @@
     <header>
         <nav class="nav">
             <menu>
-                <li class="nav__logo"><img src="./svgs/Full-logo.svg" alt="Logo"></li>
+                <li><a class="nav__logo" href="#"><img src="./svgs/Full-logo.svg" alt="Logo"></a></li>
             </menu>
             <menu class="nav__links">
                 <li class="u-bold-text"><a class="nav__item" href="#proc-my">Proč my</a></li>
@@ -68,7 +68,7 @@
     <main>
         <section id="proc-my">
             <h2>Proč my</h2>
-            <div class="u-flex-gap-medium">
+            <div class="cards-container">
                 <div class=card>
                     <img src="./svgs/mobil-svg.svg" alt="Mobil">
                     <p class="u-blue-text card__heading">Vytvoříme vám web, který bude zcela responzivní</p>
@@ -121,7 +121,7 @@
             <h2>Co o nás říkají</h2>
             <div class="swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><div class="window">„Výjimečná práce na tvorbě webových stránek! Sledují aktuální trendy, jsou inovativní a flexibilní v přístupu k zákazníkovi. Výsledný web přesně splnil naše očekávání. Velmi nás potěšila také jejich ochota přinášet k projektu nové nápady a přizpůsobit se měnícím se požadavkům. 👍💻”</div></div>
+                  <div class="swiper-slide"><div class="window">„Výjimečná práce na tvorbě našich nových webových stránkách! Sledují aktuální trendy, jsou inovativní a flexibilní v přístupu k zákazníkovi. Výsledný web přesně splnil naše očekávání. Velmi nás potěšila také jejich ochota přinášet k projektu nové nápady a přizpůsobit se měnícím se požadavkům. 👍💻”</div></div>
                   <div class="swiper-slide"><div class="window">"Skvělá práce! Rychlá reakce na požadavky, perfektní grafický design a jedinečný web. Děkujeme za úžasnou spolupráci! Tým je nejen odborný, ale také velmi přátelský. S jejich pomocí jsme získali moderní a efektivní webovou stránku. 💻🚀 #WebDesignMistra #DokonaléWebovéStránky"</div></div>
                   <div class="swiper-slide"><div class="window">"Tato firma se opravdu stará o klienty. Od prvního setkání až po dokončení projektu, bylo vše bezproblémové. Profesionální, kreativní a vstřícní! Doporučuji. Jsme vděční za ochotu a výbornou spolupráci, která nám přinesla výsledek přesně podle našich představ. 🌐🔧 #SkvěláSpolupráce"</div></div>
                 </div>
@@ -181,10 +181,12 @@
             pagination: {
                 el: '.swiper-pagination',
             },
-            effect: "fade",
-            fadeEffect: {
-                crossFade: true
-            },
+            spaceBetween: 32,
+            breakpoints: {
+                1280: {
+                    slidesPerView: 2,
+                }
+            }
         });
       </script>
       <script src="hamburger.js"></script>
